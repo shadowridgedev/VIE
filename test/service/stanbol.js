@@ -463,7 +463,7 @@ test("VIE.js StanbolService - Load", function () {
             if (! (entity instanceof Backbone.Model)){
                 allEntities = false;
                 ok(false, "VIE.js StanbolService - Load: Entity is not a Backbone model!");
-                console.error("VIE.js StanbolService - Analyze: ", entity, "is not a Backbone model!");
+                console.error("VIE.js StanbolService - Load: ", entity, "is not a Backbone model!");
             }
         }
         ok(allEntities);
