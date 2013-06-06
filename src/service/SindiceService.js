@@ -68,7 +68,10 @@
             this.rules = jQuery.merge(this.rules, (this.options.rules) ? this.options.rules : []);
         },
 // ### load(loadable)
-// This method loads the entity that is stored within the loadable into VIE.
+// This method loads a linked data resource from the Sindice cache as a VIE
+// entity. The entity uri has to be given as the entity property of the options hash.
+// Since Sindice only supports application/rdf+xml as output, RdfQuery is a requirement for this method.
+//
 // **Parameters**:
 // *{VIE.Loadable}* **lodable** The loadable.
 // **Throws**:
